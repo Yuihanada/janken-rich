@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>サッカーゲーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>⚽️サッカー⚽️</h1>
+  <div class="field">
+    <img class="ball" src="Screenshot 2025-05-22 at 18.08.18.png" alt="ball">
+  </div>
+  <div class="result" id="result">いつでもシュートしてね</div>
+  <button onclick="shoot()">シュート！</button>
+
+  <script>
+    function shoot() {
+      const ball = document.querySelector('.ball');
+      const result = document.getElementById('result');
+
+
+      ball.style.bottom = '300px';
+
+
+      const outcomes = ['ゴール！🥅', 'セーブ(°_°)', 'バー直撃！💥', '残念枠外...😭'];
+      const random = Math.floor(Math.random() * outcomes.length);
+      const selected = outcomes[random];
+
+      // 表示とアニメーションの復帰
+      setTimeout(() => {
+        result.textContent = selected;
+        ball.style.bottom = '10px';
+      }, 600);
+    }
+  </script>
+
+</body>
+</html>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/test.js"></script>
+  </body>
+</html>

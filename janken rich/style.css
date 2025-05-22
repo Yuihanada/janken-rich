@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+  background: #6ab04c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.field {
+  background: #27ae60;
+  width: 300px;
+  height: 400px;
+  border: 5px solid white;
+  position: relative;
+  border-radius: 10px;
+}
+
+.ball {
+  width: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 125px;
+  transition: all 0.5s;
+}
+
+.result {
+  margin: 20px;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
